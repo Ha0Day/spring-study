@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Optional;
 
-@Repository
-public class MemoryMemberRepository implements MemberRepository{
 
-    private static Map<Long, Member> store=new HashMap<>();
+public class MemoryMemberRepository implements MemberRepository {
+
+    private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L; //
 
     @Override
@@ -39,7 +39,7 @@ public class MemoryMemberRepository implements MemberRepository{
         return new ArrayList<>(store.values());
     }
 
-    public void clearStore(){
+    public void clearStore() {
         store.clear();
     }
 }
