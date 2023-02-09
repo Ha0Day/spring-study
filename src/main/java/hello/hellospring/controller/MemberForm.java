@@ -2,13 +2,14 @@ package hello.hellospring.controller;
 
 public class MemberForm {
 
-    private String name;
+    private String yirem;
 
-    public String getName() {
-        return name;
+    public String getYirem() {
+        return yirem;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setYirem(String yirem) {
+        this.yirem = yirem;
     }
 }
+
