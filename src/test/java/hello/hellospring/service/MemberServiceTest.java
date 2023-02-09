@@ -24,6 +24,7 @@ class MemberServiceTest {
     MemoryMemberRepository memberRepository;
     @BeforeEach
     public void beforeEach(){
+        //개발자가 직접 의존성 주입
         memberRepository=new MemoryMemberRepository();
         memberService =new MemberService(memberRepository);
     }
